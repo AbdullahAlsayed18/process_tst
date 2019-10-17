@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Production" jobType="Standard">
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="no of days to back" name="back_jdays" prompt="back_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="End_Date" prompt="End_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="End_Day" prompt="End_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="end_jdays" prompt="end_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="End_Partition" prompt="End_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="job to recover day/s" name="isrecovery" prompt="isrecovery?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="run" prompt="run?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="Start_Date" prompt="Start_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="Start_Day" prompt="Start_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="start_jdays" prompt="start_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="Start_Partition" prompt="Start_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="_29_Database" prompt="_29_Database?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V3&quot;"/>
+    <contextParameter comment="" name="_29_Host" prompt="_29_Host?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.29&quot;"/>
+    <contextParameter comment="" name="_29_Password_readolny" prompt="_29_Password_readolny?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_29_Password_tpayarchive" prompt="_29_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_29_Port" prompt="_29_Port?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_29_Schema_Archive" prompt="_29_Schema_Archive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_29_Schema_dbo" prompt="_29_Schema_dbo?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_29_UserName_readonly" prompt="_29_UserName_readonly?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_29_UserName_tpayarchive" prompt="_29_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="_30_Database" prompt="_30_Database?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V3&quot;"/>
+    <contextParameter comment="" name="_30_Host" prompt="_30_Host?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.30&quot;"/>
+    <contextParameter comment="" name="_30_Password_readolny" prompt="_30_Password_readolny?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_30_Password_tpayarchive" prompt="_30_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_30_Port" prompt="_30_Port?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_30_Schema_Archive" prompt="_30_Schema_Archive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_30_Schema_dbo" prompt="_30_Schema_dbo?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_30_UserName_readonly" prompt="_30_UserName_readonly?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_30_UserName_tpayarchive" prompt="_30_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Development">
+    <contextParameter comment="no of days to back" name="back_jdays" prompt="back_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="End_Date" prompt="End_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;2019-01-20&quot;"/>
+    <contextParameter comment="" name="End_Day" prompt="End_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="end_jdays" prompt="end_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="End_Partition" prompt="End_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="job to recover day/s" name="isrecovery" prompt="isrecovery?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="run" prompt="run?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="Start_Date" prompt="Start_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;2019-01-20&quot;"/>
+    <contextParameter comment="" name="Start_Day" prompt="Start_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="start_jdays" prompt="start_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="Start_Partition" prompt="Start_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="_29_Database" prompt="_29_Database?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V2&quot;"/>
+    <contextParameter comment="" name="_29_Host" prompt="_29_Host?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.29&quot;"/>
+    <contextParameter comment="" name="_29_Password_readolny" prompt="_29_Password_readolny?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_29_Password_tpayarchive" prompt="_29_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_29_Port" prompt="_29_Port?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_29_Schema_Archive" prompt="_29_Schema_Archive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_29_Schema_dbo" prompt="_29_Schema_dbo?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_29_UserName_readonly" prompt="_29_UserName_readonly?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_29_UserName_tpayarchive" prompt="_29_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="_30_Database" prompt="_30_Database?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPay.NEW&quot;"/>
+    <contextParameter comment="" name="_30_Host" prompt="_30_Host?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;172.30.0.164&quot;"/>
+    <contextParameter comment="" name="_30_Password_readolny" prompt="_30_Password_readolny?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;123&quot;"/>
+    <contextParameter comment="" name="_30_Password_tpayarchive" prompt="_30_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;123&quot;"/>
+    <contextParameter comment="" name="_30_Port" prompt="_30_Port?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_30_Schema_Archive" prompt="_30_Schema_Archive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_30_Schema_dbo" prompt="_30_Schema_dbo?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_30_UserName_readonly" prompt="_30_UserName_readonly?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPAY&quot;"/>
+    <contextParameter comment="" name="_30_UserName_tpayarchive" prompt="_30_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPAY&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="no of days to back" name="back_jdays" prompt="back_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="End_Date" prompt="End_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;2019-01-20&quot;"/>
+    <contextParameter comment="" name="End_Day" prompt="End_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="end_jdays" prompt="end_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="End_Partition" prompt="End_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="job to recover day/s" name="isrecovery" prompt="isrecovery?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="run" prompt="run?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="Start_Date" prompt="Start_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;2019-01-20&quot;"/>
+    <contextParameter comment="" name="Start_Day" prompt="Start_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="start_jdays" prompt="start_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="Start_Partition" prompt="Start_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="_29_Database" prompt="_29_Database?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V2&quot;"/>
+    <contextParameter comment="" name="_29_Host" prompt="_29_Host?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.29&quot;"/>
+    <contextParameter comment="" name="_29_Password_readolny" prompt="_29_Password_readolny?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_29_Password_tpayarchive" prompt="_29_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_29_Port" prompt="_29_Port?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_29_Schema_Archive" prompt="_29_Schema_Archive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_29_Schema_dbo" prompt="_29_Schema_dbo?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_29_UserName_readonly" prompt="_29_UserName_readonly?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_29_UserName_tpayarchive" prompt="_29_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="_30_Database" prompt="_30_Database?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V1&quot;"/>
+    <contextParameter comment="" name="_30_Host" prompt="_30_Host?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.57.4&quot;"/>
+    <contextParameter comment="" name="_30_Password_readolny" prompt="_30_Password_readolny?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;87yj$5^dfre&quot;"/>
+    <contextParameter comment="" name="_30_Password_tpayarchive" prompt="_30_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;87yj$5^dfre&quot;"/>
+    <contextParameter comment="" name="_30_Port" prompt="_30_Port?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_30_Schema_Archive" prompt="_30_Schema_Archive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_30_Schema_dbo" prompt="_30_Schema_dbo?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_30_UserName_readonly" prompt="_30_UserName_readonly?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Bigdata&quot;"/>
+    <contextParameter comment="" name="_30_UserName_tpayarchive" prompt="_30_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Bigdata&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Archive">
+    <contextParameter comment="no of days to back" name="back_jdays" prompt="back_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="End_Date" prompt="End_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;2019-01-20&quot;"/>
+    <contextParameter comment="" name="End_Day" prompt="End_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="end_jdays" prompt="end_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="End_Partition" prompt="End_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="job to recover day/s" name="isrecovery" prompt="isrecovery?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="run" prompt="run?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="Start_Date" prompt="Start_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;2019-01-20&quot;"/>
+    <contextParameter comment="" name="Start_Day" prompt="Start_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="start_jdays" prompt="start_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="Start_Partition" prompt="Start_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="_29_Database" prompt="_29_Database?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_29_Host" prompt="_29_Host?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;127.0.0.1&quot;"/>
+    <contextParameter comment="" name="_29_Password_readolny" prompt="_29_Password_readolny?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="_29_Password_tpayarchive" prompt="_29_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="_29_Port" prompt="_29_Port?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_29_Schema_Archive" prompt="_29_Schema_Archive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_29_Schema_dbo" prompt="_29_Schema_dbo?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_29_UserName_readonly" prompt="_29_UserName_readonly?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;MSH&quot;"/>
+    <contextParameter comment="" name="_29_UserName_tpayarchive" prompt="_29_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;MSH&quot;"/>
+    <contextParameter comment="" name="_30_Database" prompt="_30_Database?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_Host" prompt="_30_Host?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_Password_readolny" prompt="_30_Password_readolny?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_Password_tpayarchive" prompt="_30_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_Port" prompt="_30_Port?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_Schema_Archive" prompt="_30_Schema_Archive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_Schema_dbo" prompt="_30_Schema_dbo?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_UserName_readonly" prompt="_30_UserName_readonly?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_UserName_tpayarchive" prompt="_30_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="128" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/Sources/TOS_DI-20180411_1414-V7.0.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMSSqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="JTDS"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context._30_Host"/>
+    <elementParameter field="TEXT" name="PORT" value="context._30_Port"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context._30_Database"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context._30_Schema_Archive"/>
+    <elementParameter field="TEXT" name="USER" value="context._30_UserName_tpayarchive"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufK9vRIpPt7ORQa9SiO+/8iBvemkLWlMn6jLNPrDPTSZg=="/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;JobsStats&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;JobsLogs&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;JobsMeter&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_RYnvsC3hEemuvr7iyav7Gw" name="DataOperation"/>
+    <routinesParameter id="_Ri6UIC3hEemuvr7iyav7Gw" name="Mathematical"/>
+    <routinesParameter id="_RjgxEC3hEemuvr7iyav7Gw" name="Numeric"/>
+    <routinesParameter id="_RkGm8C3hEemuvr7iyav7Gw" name="Relational"/>
+    <routinesParameter id="_RkfogC3hEemuvr7iyav7Gw" name="StringHandling"/>
+    <routinesParameter id="_RlDpMC3hEemuvr7iyav7Gw" name="TalendDataGenerator"/>
+    <routinesParameter id="_RlfuEC3hEemuvr7iyav7Gw" name="TalendDate"/>
+    <routinesParameter id="_RmTmYC3hEemuvr7iyav7Gw" name="TalendString"/>
+    <routinesParameter id="_RnQBkC3hEemuvr7iyav7Gw" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-64" sizeX="64" sizeY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context._29_Host"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context._29_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context._29_Schema_dbo"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context._29_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context._29_UserName_readonly"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucnH9ZX4QVVxjyV52phRHAaXxZRn1JvWw0="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select &#xD;&#xA;start_jdays,&#xD;&#xA;end_jdays, &#xD;&#xA;isrecovery,&#xD;&#xA;back_jdays,&#xD;&#xA;run,&#xD;&#xA;MONTH(Getdate() - back_jdays  -  start_jdays) As Start_Partition,&#xD;&#xA;MONTH(Getdate() - back_jdays  -  end_jdays) As End_Partition,&#xD;&#xA;Day(Getdate() - back_jdays  -  start_jdays) As Start_Day,&#xD;&#xA;Day(Getdate() - back_jdays  -  end_jdays) As End_Day&#xD;&#xA;from Archiveconfig where Job_Name = 'J_PaymentTransaction_ToKeep'&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_jdays"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_jdays"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isrecovery"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="back_jdays"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="run"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Start_Partition"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="End_Partition"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Start_Day"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="End_Day"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="ArchiveConfig_tbl"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" defaultValue="" key="false" length="10" name="start_jdays" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="end_jdays" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="isrecovery" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="back_jdays" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="run" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Start_Partition" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="End_Partition" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Start_Day" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="End_Day" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="-64" sizeX="64" sizeY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.start_jdays = input_row.start_jdays;&#xA;output_row.end_jdays = input_row.end_jdays;&#xA;output_row.isrecovery = input_row.isrecovery;&#xA;output_row.back_jdays = input_row.back_jdays;&#xA;output_row.Start_Partition = input_row.Start_Partition;&#xA;output_row.End_Partition = input_row.End_Partition;&#xA;output_row.Start_Day = input_row.Start_Day;&#xA;output_row.End_Day = input_row.End_Day;&#xA;output_row.run = input_row.run;&#xA;&#xA;&#xA;context.start_jdays = input_row.start_jdays;&#xA;context.end_jdays = input_row.end_jdays;&#xA;context.isrecovery= input_row.isrecovery;&#xA;context.back_jdays = input_row.back_jdays;&#xA;context.Start_Partition = input_row.Start_Partition;&#xA;context.End_Partition = input_row.End_Partition;&#xA;context.Start_Day = input_row.Start_Day;&#xA;context.End_Day = input_row.End_Day;&#xA;context.run = input_row.run;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Set_Context_Values"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column comment="" defaultValue="" key="false" length="10" name="start_jdays" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="end_jdays" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="isrecovery" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="back_jdays" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="run" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Start_Partition" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="End_Partition" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Start_Day" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="End_Day" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="-64" sizeX="64" sizeY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_hkN0kDBSEemCZcvCQKQRAw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Check_recovery_value"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="recovery_lk_" name="Delete_lk">
+      <column comment="" defaultValue="" key="false" length="10" name="start_jdays" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="end_jdays" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="isrecovery" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="back_jdays" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Start_Partition" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="End_Partition" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Start_Day" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="End_Day" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Delete_lk" expressionFilter="check_recovery_lk.isrecovery == 1 &amp;&amp;  check_recovery_lk.run ==1" activateExpressionFilter="true">
+        <mapperTableEntries name="start_jdays" expression="check_recovery_lk.start_jdays " type="id_Integer"/>
+        <mapperTableEntries name="end_jdays" expression="check_recovery_lk.end_jdays " type="id_Integer"/>
+        <mapperTableEntries name="isrecovery" expression="check_recovery_lk.isrecovery " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="back_jdays" expression="check_recovery_lk.back_jdays" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="Start_Partition" expression="check_recovery_lk.Start_Partition " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="End_Partition" expression="check_recovery_lk.End_Partition " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Start_Day" expression="check_recovery_lk.Start_Day " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="End_Day" expression="check_recovery_lk.End_Day " type="id_Integer" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="check_recovery_lk" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="start_jdays" type="id_Integer"/>
+        <mapperTableEntries name="end_jdays" type="id_Integer"/>
+        <mapperTableEntries name="isrecovery" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="back_jdays" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="run" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="Start_Partition" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="End_Partition" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Start_Day" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="End_Day" type="id_Integer" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="-64" sizeX="64" sizeY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context._30_Host"/>
+    <elementParameter field="TEXT" name="PORT" value="context._30_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context._30_Schema_Archive"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context._30_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context._30_UserName_tpayarchive"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufK9vRIpPt7ORQa9SiO+/8iBvemkLWlMn6jLNPrDPTSZg=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete from Archive.PaymentTransactions_ToKeep&#xD;&#xA;where partitionId between &quot;+context.Start_Partition+&quot; and  &quot;+context.End_Partition+&quot;&#xD;&#xA;and day(datecreated) between &quot; + context.Start_Day +&quot; and  &quot; + context.End_Day"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="start_jdays" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="Delete_recovery_days"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="recovery_lk_" name="tDBRow_1">
+      <column comment="" defaultValue="" key="false" length="10" name="start_jdays" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="end_jdays" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="isrecovery" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="back_jdays" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Start_Partition" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="End_Partition" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Start_Day" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="End_Day" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="recovery_lk_" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="10" name="start_jdays" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="end_jdays" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="isrecovery" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="back_jdays" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Start_Partition" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="End_Partition" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Start_Day" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="End_Day" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="224" sizeX="64" sizeY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context._29_Host"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context._29_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context._29_Schema_dbo"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context._29_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context._29_UserName_readonly"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucnH9ZX4QVVxjyV52phRHAaXxZRn1JvWw0="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select --one time&#xD;&#xA;P.Id,P.Date,P.MobileOperatorId,P.ErrorDetails,P.MerchantCustomData,P.MerchantId,&#xD;&#xA;P.Msisdn,P.TotalAmount,P.CurrencyId,P.RedirectUrl,P.Status,P.PaymentMethod,&#xD;&#xA;P.DateCreated,P.DateModified,P.CreatedBy,P.ModifiedBy,P.UserIPAddress,&#xD;&#xA;P.IntegrationChannelId,P.CountryId,P.ChargingTimeMs,P.VerificationMethod,&#xD;&#xA;P.OldId,P.ChargingResponse,P.ProductOffering_SID,P.ProductOfferName,&#xD;&#xA;P.ProductCatalog_SID,P.ProductCatalogName,P.ProductSKU,P.Node,&#xD;&#xA;P.SubscriptionContractId,P.BillRetrialsCount,P.BillEndDate,P.BillLastRetrialAmount,&#xD;&#xA;P.BillLastRetrialStatus,P.OperatorCorrelationId &#xD;&#xA;From [dbo].[PaymentTransactions] P  with(nolock)&#xD;&#xA;where  &#xD;&#xA;P.partitionId between &quot;+context.Start_Partition+&quot; and  &quot;+context.End_Partition+&quot;&#xD;&#xA;and day(P.datecreated) between &quot; + context.Start_Day +&quot; and  &quot; + context.End_Day +&quot;&#xD;&#xA;and P.MerchantId in (10204,10374) /*and P.MobileOperatorId = 10030)*/&#xD;&#xA;and integrationChannelId &lt;> 5&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MobileOperatorId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ErrorDetails"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MerchantCustomData"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MerchantId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Msisdn"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TotalAmount"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CurrencyId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RedirectUrl"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PaymentMethod"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateCreated"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateModified"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedBy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UserIPAddress"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IntegrationChannelId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CountryId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ChargingTimeMs"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VerificationMethod"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OldId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ChargingResponse"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductOffering_SID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductOfferName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductCatalog_SID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductCatalogName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductSKU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Node"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SubscriptionContractId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillRetrialsCount"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillEndDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillLastRetrialAmount"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillLastRetrialStatus"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OperatorCorrelationId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="PaymentTransactions_prod_Src_query"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" defaultValue="" key="false" length="19" name="Id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="Date" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MobileOperatorId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="ErrorDetails" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="MerchantCustomData" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MerchantId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Msisdn" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="TotalAmount" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CurrencyId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="RedirectUrl" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Status" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PaymentMethod" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateCreated" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateModified" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CreatedBy" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ModifiedBy" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="UserIPAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="IntegrationChannelId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CountryId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ChargingTimeMs" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="VerificationMethod" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="OldId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ChargingResponse" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ProductOffering_SID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="512" name="ProductOfferName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ProductCatalog_SID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="ProductCatalogName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="ProductSKU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Node" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubscriptionContractId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="BillRetrialsCount" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="BillEndDate" nullable="true" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="BillLastRetrialAmount" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="BillLastRetrialStatus" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="OperatorCorrelationId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="224" sizeX="64" sizeY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context._30_Host"/>
+    <elementParameter field="TEXT" name="PORT" value="context._30_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context._29_Schema_Archive"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context._30_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context._30_UserName_tpayarchive"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufK9vRIpPt7ORQa9SiO+/8iBvemkLWlMn6jLNPrDPTSZg=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;PaymentTransactions_ToKeep&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="Id" show="false"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MobileOperatorId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ErrorDetails"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MerchantCustomData"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MerchantId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Msisdn"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TotalAmount"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CurrencyId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RedirectUrl"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PaymentMethod"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateCreated"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateModified"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedBy"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UserIPAddress"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IntegrationChannelId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CountryId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ChargingTimeMs"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VerificationMethod"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OldId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ChargingResponse"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductOffering_SID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductOfferName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductCatalog_SID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductCatalogName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductSKU"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Node"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SubscriptionContractId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillRetrialsCount"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillEndDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillLastRetrialAmount"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillLastRetrialStatus"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OperatorCorrelationId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="PaymentTransactions_To_Keep_Table"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" defaultValue="" key="true" length="19" name="Id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="Date" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MobileOperatorId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="ErrorDetails" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="MerchantCustomData" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MerchantId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Msisdn" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="TotalAmount" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CurrencyId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="RedirectUrl" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Status" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PaymentMethod" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateCreated" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateModified" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CreatedBy" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ModifiedBy" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="UserIPAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="IntegrationChannelId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CountryId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ChargingTimeMs" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="VerificationMethod" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="OldId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ChargingResponse" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ProductOffering_SID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="512" name="ProductOfferName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ProductCatalog_SID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="ProductCatalogName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="ProductSKU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Node" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubscriptionContractId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="BillRetrialsCount" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="BillEndDate" nullable="true" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="BillLastRetrialAmount" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="BillLastRetrialStatus" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="OperatorCorrelationId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="true" length="19" name="Id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="Date" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MobileOperatorId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="ErrorDetails" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="MerchantCustomData" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MerchantId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Msisdn" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="TotalAmount" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CurrencyId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="RedirectUrl" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Status" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PaymentMethod" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateCreated" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateModified" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CreatedBy" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ModifiedBy" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="UserIPAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="IntegrationChannelId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CountryId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ChargingTimeMs" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="VerificationMethod" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="OldId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ChargingResponse" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ProductOffering_SID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="512" name="ProductOfferName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ProductCatalog_SID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="ProductCatalogName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="ProductSKU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Node" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubscriptionContractId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="BillRetrialsCount" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="BillEndDate" nullable="true" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="BillLastRetrialAmount" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="BillLastRetrialStatus" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="OperatorCorrelationId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Check_Run"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <connection connectorName="FLOW" label="confige_lk" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJavaRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="jdays"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="confige_lk" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="check_recovery_lk" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="check_recovery_lk" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Delete_lk" lineStyle="0" metaname="Delete_lk" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="back_jdays"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="End_Partition"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Start_Day"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="End_Day"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Start_Partition"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Delete_lk" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tDBInput_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.run == 1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Production" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="CC" prompt="CC?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;BigData@tpay.me&quot;"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;BiDa@tp7&quot;"/>
+    <contextParameter comment="" name="SenderName" prompt="SenderName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Archive Jobs&quot;"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;smtp.office365.com&quot;"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;587&quot;"/>
+    <contextParameter comment="" name="To_BigData" prompt="To_BigData?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;BigData@tpay.me&quot;"/>
+    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;BigData@tpay.me&quot;"/>
+    <contextParameter comment="" name="_29_Database" prompt="_29_Database?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V3&quot;"/>
+    <contextParameter comment="" name="_29_Host" prompt="_29_Host?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.29&quot;"/>
+    <contextParameter comment="" name="_29_Password_readolny" prompt="_29_Password_readolny?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_29_Password_tpayarchive" prompt="_29_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_29_Port" prompt="_29_Port?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_29_Schema_Archive" prompt="_29_Schema_Archive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_29_Schema_dbo" prompt="_29_Schema_dbo?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_29_UserName_readonly" prompt="_29_UserName_readonly?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_29_UserName_tpayarchive" prompt="_29_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="_5_Database" prompt="_5_Database?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018V2&quot;"/>
+    <contextParameter comment="" name="_5_Host" prompt="_5_Host?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.5&quot;"/>
+    <contextParameter comment="" name="_5_Password_readolny" prompt="_5_Password_readolny?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_5_Password_tpayarchive" prompt="_5_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_5_Port" prompt="_5_Port?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_5_Schema_Archive" prompt="_5_Schema_Archive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_5_Schema_dbo" prompt="_5_Schema_dbo?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_5_UserName_readonly" prompt="_5_UserName_readonly?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_5_UserName_tpayarchive" prompt="_5_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="SF_CopyCMD_Path" prompt="SF_CopyCMD_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value="&quot;D:\\DWH_CSV\\SnowFlake_Copy_Cmd\\&quot;"/>
+    <contextParameter comment="" name="SF_Account" prompt="SF_Account?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;tpay.west-europe.azure&quot;"/>
+    <contextParameter comment="" name="SF_DB" prompt="SF_DB?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;TPAY_DB&quot;"/>
+    <contextParameter comment="" name="SF_Password" prompt="SF_Password?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_Password" value="IPpgPu55Usf0SwvtVlEVTA=="/>
+    <contextParameter comment="" name="SF_Schema" prompt="SF_Schema?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;TPAY_PROD&quot;"/>
+    <contextParameter comment="" name="SF_UserName" prompt="SF_UserName?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;AMAGDY&quot;"/>
+    <contextParameter comment="" name="SF_WH" prompt="SF_WH?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;LOAD_WH&quot;"/>
+    <contextParameter comment="" name="SnowSql_Path" prompt="SnowSql_Path?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;C:\Users\Bigdata\&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Archive">
+    <contextParameter comment="" name="CC" prompt="CC?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="SenderName" prompt="SenderName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="To_BigData" prompt="To_BigData?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_29_Database" prompt="_29_Database?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_29_Host" prompt="_29_Host?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;127.0.0.1&quot;"/>
+    <contextParameter comment="" name="_29_Password_readolny" prompt="_29_Password_readolny?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="_29_Password_tpayarchive" prompt="_29_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="_29_Port" prompt="_29_Port?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_29_Schema_Archive" prompt="_29_Schema_Archive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_29_Schema_dbo" prompt="_29_Schema_dbo?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_29_UserName_readonly" prompt="_29_UserName_readonly?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;MSH&quot;"/>
+    <contextParameter comment="" name="_29_UserName_tpayarchive" prompt="_29_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;MSH&quot;"/>
+    <contextParameter comment="" name="_5_Database" prompt="_5_Database?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_Host" prompt="_5_Host?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_Password_readolny" prompt="_5_Password_readolny?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_Password_tpayarchive" prompt="_5_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_Port" prompt="_5_Port?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_Schema_Archive" prompt="_5_Schema_Archive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_Schema_dbo" prompt="_5_Schema_dbo?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_UserName_readonly" prompt="_5_UserName_readonly?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_UserName_tpayarchive" prompt="_5_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="SF_CopyCMD_Path" prompt="SF_CopyCMD_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value="&quot;D:\\DWH_CSV\\SnowFlake_Copy_Cmd\\&quot;"/>
+    <contextParameter comment="" name="SF_Account" prompt="SF_Account?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;tpay.west-europe.azure&quot;"/>
+    <contextParameter comment="" name="SF_DB" prompt="SF_DB?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;TPAY_DB&quot;"/>
+    <contextParameter comment="" name="SF_Password" prompt="SF_Password?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_Password" value="IPpgPu55Usf0SwvtVlEVTA=="/>
+    <contextParameter comment="" name="SF_Schema" prompt="SF_Schema?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;TPAY_PROD&quot;"/>
+    <contextParameter comment="" name="SF_UserName" prompt="SF_UserName?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;AMAGDY&quot;"/>
+    <contextParameter comment="" name="SF_WH" prompt="SF_WH?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;LOAD_WH&quot;"/>
+    <contextParameter comment="" name="SnowSql_Path" prompt="SnowSql_Path?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="" name="CC" prompt="CC?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;asmaa.magdy@tpay.me&quot;"/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Muhammad.AlShaarawy@tpay.me&quot;"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="SenderName" prompt="SenderName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Archive Jobs&quot;"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;smtp.office365.com&quot;"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;587&quot;"/>
+    <contextParameter comment="" name="To_BigData" prompt="To_BigData?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Muhammad.AlShaarawy@tpay.me&quot;"/>
+    <contextParameter comment="" name="_29_Database" prompt="_29_Database?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V2&quot;"/>
+    <contextParameter comment="" name="_29_Host" prompt="_29_Host?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.29&quot;"/>
+    <contextParameter comment="" name="_29_Password_readolny" prompt="_29_Password_readolny?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_29_Password_tpayarchive" prompt="_29_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_29_Port" prompt="_29_Port?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_29_Schema_Archive" prompt="_29_Schema_Archive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_29_Schema_dbo" prompt="_29_Schema_dbo?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_29_UserName_readonly" prompt="_29_UserName_readonly?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_29_UserName_tpayarchive" prompt="_29_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="_5_Database" prompt="_5_Database?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018V2&quot;"/>
+    <contextParameter comment="" name="_5_Host" prompt="_5_Host?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.5&quot;"/>
+    <contextParameter comment="" name="_5_Password_readolny" prompt="_5_Password_readolny?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_5_Password_tpayarchive" prompt="_5_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_5_Port" prompt="_5_Port?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_5_Schema_Archive" prompt="_5_Schema_Archive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_5_Schema_dbo" prompt="_5_Schema_dbo?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_5_UserName_readonly" prompt="_5_UserName_readonly?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_5_UserName_tpayarchive" prompt="_5_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="SF_CopyCMD_Path" prompt="SF_CopyCMD_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value="&quot;D:\\DWH_CSV\\SnowFlake_Copy_Cmd\\&quot;"/>
+    <contextParameter comment="" name="SF_Account" prompt="SF_Account?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;tpay.west-europe.azure&quot;"/>
+    <contextParameter comment="" name="SF_DB" prompt="SF_DB?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;DB_ODS&quot;"/>
+    <contextParameter comment="" name="SF_Password" prompt="SF_Password?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_Password" value="IPpgPu55Usf0SwvtVlEVTA=="/>
+    <contextParameter comment="" name="SF_Schema" prompt="SF_Schema?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;STG&quot;"/>
+    <contextParameter comment="" name="SF_UserName" prompt="SF_UserName?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;AMAGDY&quot;"/>
+    <contextParameter comment="" name="SF_WH" prompt="SF_WH?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;LOAD_WH&quot;"/>
+    <contextParameter comment="" name="SnowSql_Path" prompt="SnowSql_Path?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;C:\Users\Bigdata\&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" name="CC" prompt="CC?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;BigData@tpay.me&quot;"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;BiDa@tp7&quot;"/>
+    <contextParameter comment="" name="SenderName" prompt="SenderName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Archive Jobs&quot;"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;smtp.office365.com&quot;"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;587&quot;"/>
+    <contextParameter comment="" name="To_BigData" prompt="To_BigData?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;BigData@tpay.me&quot;"/>
+    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;BigData@tpay.me&quot;"/>
+    <contextParameter comment="" name="_29_Database" prompt="_29_Database?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V3&quot;"/>
+    <contextParameter comment="" name="_29_Host" prompt="_29_Host?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.29&quot;"/>
+    <contextParameter comment="" name="_29_Password_readolny" prompt="_29_Password_readolny?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_29_Password_tpayarchive" prompt="_29_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_29_Port" prompt="_29_Port?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_29_Schema_Archive" prompt="_29_Schema_Archive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_29_Schema_dbo" prompt="_29_Schema_dbo?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_29_UserName_readonly" prompt="_29_UserName_readonly?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_29_UserName_tpayarchive" prompt="_29_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="_5_Database" prompt="_5_Database?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018V2&quot;"/>
+    <contextParameter comment="" name="_5_Host" prompt="_5_Host?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.5&quot;"/>
+    <contextParameter comment="" name="_5_Password_readolny" prompt="_5_Password_readolny?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_5_Password_tpayarchive" prompt="_5_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_5_Port" prompt="_5_Port?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_5_Schema_Archive" prompt="_5_Schema_Archive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_5_Schema_dbo" prompt="_5_Schema_dbo?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_5_UserName_readonly" prompt="_5_UserName_readonly?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_5_UserName_tpayarchive" prompt="_5_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="SF_CopyCMD_Path" prompt="SF_CopyCMD_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value="&quot;F:\\DWH_CSV\\SnowFlake_Copy_Cmd\\&quot;"/>
+    <contextParameter comment="" name="SF_Account" prompt="SF_Account?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;tpay.west-europe.azure&quot;"/>
+    <contextParameter comment="" name="SF_DB" prompt="SF_DB?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;TPAY_DB&quot;"/>
+    <contextParameter comment="" name="SF_Password" prompt="SF_Password?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_Password" value="IPpgPu55Usf0SwvtVlEVTA=="/>
+    <contextParameter comment="" name="SF_Schema" prompt="SF_Schema?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;TPAY_PROD&quot;"/>
+    <contextParameter comment="" name="SF_UserName" prompt="SF_UserName?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;AMAGDY&quot;"/>
+    <contextParameter comment="" name="SF_WH" prompt="SF_WH?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;LOAD_WH&quot;"/>
+    <contextParameter comment="" name="SnowSql_Path" prompt="SnowSql_Path?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;C:\Users\Bigdata\&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Development">
+    <contextParameter comment="" name="CC" prompt="CC?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Muhammad.AlShaarawy@tpay.me&quot;"/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Muhammad.AlShaarawy@tpay.me&quot;"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="SenderName" prompt="SenderName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Archive Jobs&quot;"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;smtp.office365.com&quot;"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;587&quot;"/>
+    <contextParameter comment="" name="To_BigData" prompt="To_BigData?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Muhammad.AlShaarawy@tpay.me&quot;"/>
+    <contextParameter comment="" name="_29_Database" prompt="_29_Database?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V2&quot;"/>
+    <contextParameter comment="" name="_29_Host" prompt="_29_Host?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.29&quot;"/>
+    <contextParameter comment="" name="_29_Password_readolny" prompt="_29_Password_readolny?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_29_Password_tpayarchive" prompt="_29_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_29_Port" prompt="_29_Port?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_29_Schema_Archive" prompt="_29_Schema_Archive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_29_Schema_dbo" prompt="_29_Schema_dbo?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_29_UserName_readonly" prompt="_29_UserName_readonly?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_29_UserName_tpayarchive" prompt="_29_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="_5_Database" prompt="_5_Database?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_5_Host" prompt="_5_Host?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;127.0.0.1&quot;"/>
+    <contextParameter comment="" name="_5_Password_readolny" prompt="_5_Password_readolny?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="_5_Password_tpayarchive" prompt="_5_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="_5_Port" prompt="_5_Port?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_5_Schema_Archive" prompt="_5_Schema_Archive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_5_Schema_dbo" prompt="_5_Schema_dbo?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_5_UserName_readonly" prompt="_5_UserName_readonly?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;MSH&quot;"/>
+    <contextParameter comment="" name="_5_UserName_tpayarchive" prompt="_5_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;MSH&quot;"/>
+    <contextParameter comment="" name="SF_CopyCMD_Path" prompt="SF_CopyCMD_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value="&quot;D:\\DWH_CSV\\SnowFlake_Copy_Cmd\\&quot;"/>
+    <contextParameter comment="" name="SF_Account" prompt="SF_Account?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;tpay.west-europe.azure&quot;"/>
+    <contextParameter comment="" name="SF_DB" prompt="SF_DB?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;DB_ODS&quot;"/>
+    <contextParameter comment="" name="SF_Password" prompt="SF_Password?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_Password" value="IPpgPu55Usf0SwvtVlEVTA=="/>
+    <contextParameter comment="" name="SF_Schema" prompt="SF_Schema?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;STG&quot;"/>
+    <contextParameter comment="" name="SF_UserName" prompt="SF_UserName?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;AMAGDY&quot;"/>
+    <contextParameter comment="" name="SF_WH" prompt="SF_WH?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;LOAD_WH&quot;"/>
+    <contextParameter comment="" name="SnowSql_Path" prompt="SnowSql_Path?" promptNeeded="false" repositoryContextId="_jIDrAKilEemBZsAKReN-HQ" type="id_String" value="&quot;C:\Users\muhammad.alshaarawy\.snowsql\1.1.76&quot;"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/TOS_DI-Win32-20180411_1414-V7.0.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_DN4B4kslEemqi5pI34djqg" name="DataOperation"/>
+    <routinesParameter id="_DSMhNkslEemqi5pI34djqg" name="Mathematical"/>
+    <routinesParameter id="_DSWSNkslEemqi5pI34djqg" name="Numeric"/>
+    <routinesParameter id="_DTilAEslEemqi5pI34djqg" name="Relational"/>
+    <routinesParameter id="_DTru8EslEemqi5pI34djqg" name="StringHandling"/>
+    <routinesParameter id="_DT1f8EslEemqi5pI34djqg" name="TalendDataGenerator"/>
+    <routinesParameter id="_DT_Q8EslEemqi5pI34djqg" name="TalendDate"/>
+    <routinesParameter id="_DUIa80slEemqi5pI34djqg" name="TalendStringUtil"/>
+    <routinesParameter id="_DUIa6UslEemqi5pI34djqg" name="TalendString"/>
+  </parameters>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_BlackListPatterns"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_32DbMMTMEem3tevq4QspGw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_CSInvoices"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_nvJQ0MQCEemd3t37tuzWMw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_3"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_6" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_EmpelloMatrix"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_EB3Q0MQJEem3tevq4QspGw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_6"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_10" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_forecast"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_Q7WPQMQKEem3tevq4QspGw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_10"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_15" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_H12018TPayComplaints"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_eoAFIMQNEem3tevq4QspGw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_15"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_21" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_IntegrationChannels"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_01x9kMTLEem3tevq4QspGw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_21"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_28" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_MerchantAdditionalConfig"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_POwuYMTKEem3tevq4QspGw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_28"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_36" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_merchantLegalName"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_Y1ov0MQLEem3tevq4QspGw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_36"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1408" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_45" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_MerchantSaleChannelRevenuShares"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_zgiicMi8EemxZ-yWlu2PBQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_45"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_55" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_MerchantSalesChannels"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_5v2G4MjIEemCJceiFXD4Cg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_55"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_66" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_MerchantServiceMapping"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_M5AJQMQMEem3tevq4QspGw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_66"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_78" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_PaymentIntegrations"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_eB9c0MjDEemayutcRpmGSA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_78"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1664" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_91" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_PaymentIntegrationServices"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_EkXgwMjGEemdSP0159T4hQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_91"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1824" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_105" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_TicketHistory"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_HpYt4MTJEem3tevq4QspGw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_105"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1664" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_120" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_Tickets"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_LuhWUMQQEem3tevq4QspGw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_120"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_136" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="J_DWH_LK_TPayUsers"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Production"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_Er2n8NrREem1Ta8YkGSA0Q"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_136"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence  Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot; J_DWH_LK_BlackListPatterns Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_1_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_1_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_1"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_2" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot; J_DWH_LK_MerchantAdditionalConfig Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_28_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_28_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_2"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_3" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot; J_DWH_LK_MerchantSalesChannels Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_55_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_55_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_3"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_4" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot; J_DWH_LK_EmpelloMatrix Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_6_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_6_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_4"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_5" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot; J_DWH_LK_PaymentIntegrations Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_78_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_78_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_5"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1408" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_6" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;J_DWH_LK_MerchantSaleChannelRevenuShares Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_45_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_45_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_6"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1664" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_7" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;J_DWH_LK_Tickets Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_120_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_120_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_7"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1824" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_8" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;J_DWH_LK_TicketHistory Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_105_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_105_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_8"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_9" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;J_DWH_LK_CSInvoices Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_3_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_3_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_9"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_10" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;J_DWH_LK_CSInvoices Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_3_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_3_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_10"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_11" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;J_DWH_LK_forcast Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_10_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_10_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_11"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_12" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;J_DWH_LK_H12018TPayComplaints Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_15_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_15_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_12"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_13" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;J_DWH_LK_MerchantServiceMapping Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_66_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_66_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_13"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_14" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;J_DWH_LK_IntegrationChannels Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_21_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_21_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_14"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_15" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;J_DWH_LK_TPayUsers Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_136_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_136_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_15"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1664" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_16" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To_BigData"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Lookups Sequence Error&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;J_DWH_LK_PaymentIntegrationServices Failed&#xD;&#xA;&#xD;&#xA;&quot; + &#xD;&#xA;((String)globalMap.get(&quot;tRunJob_91_ERROR_MESSAGE&quot;)) +&quot;&#xD;&#xA;&#xD;&#xA;&quot;+ ((String)globalMap.get(&quot;tRunJob_91_CHILD_EXCEPTION_STACKTRACE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="true"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Error_Mail"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_16"/>
+  </node>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tSendMail_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_3" offsetLabelX="0" offsetLabelY="0" source="tRunJob_3" target="tSendMail_9">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError9" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_6" offsetLabelX="0" offsetLabelY="0" source="tRunJob_6" target="tSendMail_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_10" offsetLabelX="0" offsetLabelY="0" source="tRunJob_10" target="tSendMail_11">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError13" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_15" offsetLabelX="0" offsetLabelY="0" source="tRunJob_15" target="tSendMail_12">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError15" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_21" offsetLabelX="0" offsetLabelY="0" source="tRunJob_21" target="tSendMail_14">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError16" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_28" offsetLabelX="0" offsetLabelY="0" source="tRunJob_28" target="tSendMail_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_36" offsetLabelX="0" offsetLabelY="0" source="tRunJob_36" target="tSendMail_10">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError12" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_45" offsetLabelX="0" offsetLabelY="0" source="tRunJob_45" target="tSendMail_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError6" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_55" offsetLabelX="0" offsetLabelY="0" source="tRunJob_55" target="tSendMail_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_66" offsetLabelX="0" offsetLabelY="0" source="tRunJob_66" target="tSendMail_13">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError14" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_78" offsetLabelX="0" offsetLabelY="0" source="tRunJob_78" target="tSendMail_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError5" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_91" offsetLabelX="0" offsetLabelY="0" source="tRunJob_91" target="tSendMail_16">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError18" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_105" offsetLabelX="0" offsetLabelY="0" source="tRunJob_105" target="tSendMail_8">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError8" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_120" offsetLabelX="0" offsetLabelY="0" source="tRunJob_120" target="tSendMail_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError7" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_136" offsetLabelX="0" offsetLabelY="0" source="tRunJob_136" target="tSendMail_15">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError17" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_6" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_10" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_15" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_21" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_28" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_36" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_45" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_55" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_66" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_78" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_91" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_105" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_120" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_136" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_6" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_7" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_8" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_9" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_10" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_11" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_12" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_13" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_14" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_15" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_16" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

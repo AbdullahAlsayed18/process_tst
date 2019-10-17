@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Production" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="no of days to back" name="back_jdays" prompt="back_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="End_Date" prompt="End_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="End_Day" prompt="End_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="end_jdays" prompt="end_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="End_Partition" prompt="End_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="job to recover day/s" name="isrecovery" prompt="isrecovery?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="RejectionPath" prompt="RejectionPath?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;E:\ArchiveRej\&quot;"/>
+    <contextParameter comment="" name="run" prompt="run?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="Start_Date" prompt="Start_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="Start_Day" prompt="Start_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="start_jdays" prompt="start_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="Start_Partition" prompt="Start_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="UpdateEndDate" prompt="UpdateEndDate?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="UpdateStartDate" prompt="UpdateStartDate?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CC" prompt="CC?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;BigData@tpay.me&quot;"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;BiDa@tp7&quot;"/>
+    <contextParameter comment="" name="SenderName" prompt="SenderName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Archive Jobs&quot;"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;smtp.office365.com&quot;"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;587&quot;"/>
+    <contextParameter comment="" name="To" prompt="To?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;TPay-LinkDCSupport@linkdatacenter.net;support@tpay.me;BigData@tpay.me&quot;"/>
+    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;BigData@tpay.me&quot;"/>
+    <contextParameter comment="" name="_29_Database" prompt="_29_Database?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V3&quot;"/>
+    <contextParameter comment="" name="_29_Host" prompt="_29_Host?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.29&quot;"/>
+    <contextParameter comment="" name="_29_Password_readolny" prompt="_29_Password_readolny?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_29_Password_tpayarchive" prompt="_29_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_29_Port" prompt="_29_Port?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_29_Schema_Archive" prompt="_29_Schema_Archive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_29_Schema_dbo" prompt="_29_Schema_dbo?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_29_UserName_readonly" prompt="_29_UserName_readonly?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_29_UserName_tpayarchive" prompt="_29_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="_30_Database" prompt="_30_Database?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V3&quot;"/>
+    <contextParameter comment="" name="_30_Host" prompt="_30_Host?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.30&quot;"/>
+    <contextParameter comment="" name="_30_Password_readolny" prompt="_30_Password_readolny?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_30_Password_tpayarchive" prompt="_30_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_30_Port" prompt="_30_Port?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_30_Schema_Archive" prompt="_30_Schema_Archive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_30_Schema_dbo" prompt="_30_Schema_dbo?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_30_UserName_readonly" prompt="_30_UserName_readonly?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_30_UserName_tpayarchive" prompt="_30_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="_5_Database" prompt="_5_Database?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018V2&quot;"/>
+    <contextParameter comment="" name="_5_Host" prompt="_5_Host?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.5&quot;"/>
+    <contextParameter comment="" name="_5_Password_readolny" prompt="_5_Password_readolny?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_5_Password_tpayarchive" prompt="_5_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_5_Port" prompt="_5_Port?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_5_Schema_Archive" prompt="_5_Schema_Archive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_5_Schema_dbo" prompt="_5_Schema_dbo?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_5_UserName_readonly" prompt="_5_UserName_readonly?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_5_UserName_tpayarchive" prompt="_5_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Archive">
+    <contextParameter comment="no of days to back" name="back_jdays" prompt="back_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="End_Date" prompt="End_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;2019-01-20&quot;"/>
+    <contextParameter comment="" name="End_Day" prompt="End_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="end_jdays" prompt="end_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="End_Partition" prompt="End_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="job to recover day/s" name="isrecovery" prompt="isrecovery?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="RejectionPath" prompt="RejectionPath?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="run" prompt="run?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="Start_Date" prompt="Start_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;2019-01-20&quot;"/>
+    <contextParameter comment="" name="Start_Day" prompt="Start_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="start_jdays" prompt="start_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="Start_Partition" prompt="Start_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="UpdateEndDate" prompt="UpdateEndDate?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="UpdateStartDate" prompt="UpdateStartDate?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CC" prompt="CC?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="SenderName" prompt="SenderName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="To" prompt="To?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_29_Database" prompt="_29_Database?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_29_Host" prompt="_29_Host?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;127.0.0.1&quot;"/>
+    <contextParameter comment="" name="_29_Password_readolny" prompt="_29_Password_readolny?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="_29_Password_tpayarchive" prompt="_29_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="_29_Port" prompt="_29_Port?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_29_Schema_Archive" prompt="_29_Schema_Archive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_29_Schema_dbo" prompt="_29_Schema_dbo?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_29_UserName_readonly" prompt="_29_UserName_readonly?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;MSH&quot;"/>
+    <contextParameter comment="" name="_29_UserName_tpayarchive" prompt="_29_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;MSH&quot;"/>
+    <contextParameter comment="" name="_30_Database" prompt="_30_Database?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_Host" prompt="_30_Host?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_Password_readolny" prompt="_30_Password_readolny?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_Password_tpayarchive" prompt="_30_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_Port" prompt="_30_Port?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_Schema_Archive" prompt="_30_Schema_Archive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_Schema_dbo" prompt="_30_Schema_dbo?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_UserName_readonly" prompt="_30_UserName_readonly?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_30_UserName_tpayarchive" prompt="_30_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_Database" prompt="_5_Database?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_Host" prompt="_5_Host?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_Password_readolny" prompt="_5_Password_readolny?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_Password_tpayarchive" prompt="_5_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_Port" prompt="_5_Port?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_Schema_Archive" prompt="_5_Schema_Archive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_Schema_dbo" prompt="_5_Schema_dbo?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_UserName_readonly" prompt="_5_UserName_readonly?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_5_UserName_tpayarchive" prompt="_5_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="no of days to back" name="back_jdays" prompt="back_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="End_Date" prompt="End_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;2019-01-20&quot;"/>
+    <contextParameter comment="" name="End_Day" prompt="End_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="end_jdays" prompt="end_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="End_Partition" prompt="End_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="job to recover day/s" name="isrecovery" prompt="isrecovery?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="RejectionPath" prompt="RejectionPath?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;D:\&quot;"/>
+    <contextParameter comment="" name="run" prompt="run?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="Start_Date" prompt="Start_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;2019-01-20&quot;"/>
+    <contextParameter comment="" name="Start_Day" prompt="Start_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="start_jdays" prompt="start_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="Start_Partition" prompt="Start_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="UpdateEndDate" prompt="UpdateEndDate?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="UpdateStartDate" prompt="UpdateStartDate?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="CC" prompt="CC?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;asmaa.magdy@tpay.me&quot;"/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Muhammad.AlShaarawy@tpay.me&quot;"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="SenderName" prompt="SenderName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Archive Jobs&quot;"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;smtp.office365.com&quot;"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;587&quot;"/>
+    <contextParameter comment="" name="To" prompt="To?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Muhammad.AlShaarawy@tpay.me&quot;"/>
+    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Muhammad.AlShaarawy@tpay.me&quot;"/>
+    <contextParameter comment="" name="_29_Database" prompt="_29_Database?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V2&quot;"/>
+    <contextParameter comment="" name="_29_Host" prompt="_29_Host?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.29&quot;"/>
+    <contextParameter comment="" name="_29_Password_readolny" prompt="_29_Password_readolny?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_29_Password_tpayarchive" prompt="_29_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_29_Port" prompt="_29_Port?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_29_Schema_Archive" prompt="_29_Schema_Archive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_29_Schema_dbo" prompt="_29_Schema_dbo?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_29_UserName_readonly" prompt="_29_UserName_readonly?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_29_UserName_tpayarchive" prompt="_29_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="_30_Database" prompt="_30_Database?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V1&quot;"/>
+    <contextParameter comment="" name="_30_Host" prompt="_30_Host?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.57.4&quot;"/>
+    <contextParameter comment="" name="_30_Password_readolny" prompt="_30_Password_readolny?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;87yj$5^dfre&quot;"/>
+    <contextParameter comment="" name="_30_Password_tpayarchive" prompt="_30_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;87yj$5^dfre&quot;"/>
+    <contextParameter comment="" name="_30_Port" prompt="_30_Port?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_30_Schema_Archive" prompt="_30_Schema_Archive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_30_Schema_dbo" prompt="_30_Schema_dbo?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_30_UserName_readonly" prompt="_30_UserName_readonly?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Bigdata&quot;"/>
+    <contextParameter comment="" name="_30_UserName_tpayarchive" prompt="_30_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Bigdata&quot;"/>
+    <contextParameter comment="" name="_5_Database" prompt="_5_Database?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018V2&quot;"/>
+    <contextParameter comment="" name="_5_Host" prompt="_5_Host?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.5&quot;"/>
+    <contextParameter comment="" name="_5_Password_readolny" prompt="_5_Password_readolny?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_5_Password_tpayarchive" prompt="_5_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_5_Port" prompt="_5_Port?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_5_Schema_Archive" prompt="_5_Schema_Archive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_5_Schema_dbo" prompt="_5_Schema_dbo?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_5_UserName_readonly" prompt="_5_UserName_readonly?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_5_UserName_tpayarchive" prompt="_5_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="no of days to back" name="back_jdays" prompt="back_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="End_Date" prompt="End_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="End_Day" prompt="End_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="end_jdays" prompt="end_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="End_Partition" prompt="End_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="job to recover day/s" name="isrecovery" prompt="isrecovery?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="RejectionPath" prompt="RejectionPath?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;E:\ArchiveRej\&quot;"/>
+    <contextParameter comment="" name="run" prompt="run?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="Start_Date" prompt="Start_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="Start_Day" prompt="Start_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="start_jdays" prompt="start_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="Start_Partition" prompt="Start_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="UpdateEndDate" prompt="UpdateEndDate?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="UpdateStartDate" prompt="UpdateStartDate?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CC" prompt="CC?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;BigData@tpay.me&quot;"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;BiDa@tp7&quot;"/>
+    <contextParameter comment="" name="SenderName" prompt="SenderName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Archive Jobs&quot;"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;smtp.office365.com&quot;"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;587&quot;"/>
+    <contextParameter comment="" name="To" prompt="To?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;TPay-LinkDCSupport@linkdatacenter.net;support@tpay.me;BigData@tpay.me&quot;"/>
+    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;BigData@tpay.me&quot;"/>
+    <contextParameter comment="" name="_29_Database" prompt="_29_Database?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V3&quot;"/>
+    <contextParameter comment="" name="_29_Host" prompt="_29_Host?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.29&quot;"/>
+    <contextParameter comment="" name="_29_Password_readolny" prompt="_29_Password_readolny?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_29_Password_tpayarchive" prompt="_29_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_29_Port" prompt="_29_Port?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_29_Schema_Archive" prompt="_29_Schema_Archive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_29_Schema_dbo" prompt="_29_Schema_dbo?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_29_UserName_readonly" prompt="_29_UserName_readonly?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_29_UserName_tpayarchive" prompt="_29_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="_30_Database" prompt="_30_Database?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V3&quot;"/>
+    <contextParameter comment="" name="_30_Host" prompt="_30_Host?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.30&quot;"/>
+    <contextParameter comment="" name="_30_Password_readolny" prompt="_30_Password_readolny?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_30_Password_tpayarchive" prompt="_30_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_30_Port" prompt="_30_Port?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_30_Schema_Archive" prompt="_30_Schema_Archive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_30_Schema_dbo" prompt="_30_Schema_dbo?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_30_UserName_readonly" prompt="_30_UserName_readonly?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_30_UserName_tpayarchive" prompt="_30_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="_5_Database" prompt="_5_Database?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018V2&quot;"/>
+    <contextParameter comment="" name="_5_Host" prompt="_5_Host?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.5&quot;"/>
+    <contextParameter comment="" name="_5_Password_readolny" prompt="_5_Password_readolny?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_5_Password_tpayarchive" prompt="_5_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_5_Port" prompt="_5_Port?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_5_Schema_Archive" prompt="_5_Schema_Archive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_5_Schema_dbo" prompt="_5_Schema_dbo?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_5_UserName_readonly" prompt="_5_UserName_readonly?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_5_UserName_tpayarchive" prompt="_5_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Development">
+    <contextParameter comment="no of days to back" name="back_jdays" prompt="back_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="End_Date" prompt="End_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;2019-01-20&quot;"/>
+    <contextParameter comment="" name="End_Day" prompt="End_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="end_jdays" prompt="end_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="End_Partition" prompt="End_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="job to recover day/s" name="isrecovery" prompt="isrecovery?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="RejectionPath" prompt="RejectionPath?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="run" prompt="run?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Short" value="0"/>
+    <contextParameter comment="" name="Start_Date" prompt="Start_Date?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;2019-01-20&quot;"/>
+    <contextParameter comment="" name="Start_Day" prompt="Start_Day?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="no of days to back in case of recovery" name="start_jdays" prompt="start_jdays?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="Start_Partition" prompt="Start_Partition?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="UpdateEndDate" prompt="UpdateEndDate?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="UpdateStartDate" prompt="UpdateStartDate?" promptNeeded="false" repositoryContextId="_gyqLgDm4EemYSsKQr0ot7w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CC" prompt="CC?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Muhammad.AlShaarawy@tpay.me&quot;"/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Muhammad.AlShaarawy@tpay.me&quot;"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="SenderName" prompt="SenderName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Archive Jobs&quot;"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;smtp.office365.com&quot;"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;587&quot;"/>
+    <contextParameter comment="" name="To" prompt="To?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Muhammad.AlShaarawy@tpay.me&quot;"/>
+    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="_SnEl0DnUEemYSsKQr0ot7w" type="id_String" value="&quot;Muhammad.AlShaarawy@tpay.me&quot;"/>
+    <contextParameter comment="" name="_29_Database" prompt="_29_Database?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V2&quot;"/>
+    <contextParameter comment="" name="_29_Host" prompt="_29_Host?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.29&quot;"/>
+    <contextParameter comment="" name="_29_Password_readolny" prompt="_29_Password_readolny?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_29_Password_tpayarchive" prompt="_29_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_29_Port" prompt="_29_Port?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_29_Schema_Archive" prompt="_29_Schema_Archive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_29_Schema_dbo" prompt="_29_Schema_dbo?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_29_UserName_readonly" prompt="_29_UserName_readonly?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_29_UserName_tpayarchive" prompt="_29_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_-jMLIDmvEemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="_30_Database" prompt="_30_Database?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPay.NEW&quot;"/>
+    <contextParameter comment="" name="_30_Host" prompt="_30_Host?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;172.30.0.164&quot;"/>
+    <contextParameter comment="" name="_30_Password_readolny" prompt="_30_Password_readolny?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;123&quot;"/>
+    <contextParameter comment="" name="_30_Password_tpayarchive" prompt="_30_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;123&quot;"/>
+    <contextParameter comment="" name="_30_Port" prompt="_30_Port?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_30_Schema_Archive" prompt="_30_Schema_Archive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_30_Schema_dbo" prompt="_30_Schema_dbo?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_30_UserName_readonly" prompt="_30_UserName_readonly?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPAY&quot;"/>
+    <contextParameter comment="" name="_30_UserName_tpayarchive" prompt="_30_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_7GuEQDmvEemYSsKQr0ot7w" type="id_String" value="&quot;TPAY&quot;"/>
+    <contextParameter comment="" name="_5_Database" prompt="_5_Database?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_5_Host" prompt="_5_Host?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;127.0.0.1&quot;"/>
+    <contextParameter comment="" name="_5_Password_readolny" prompt="_5_Password_readolny?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="_5_Password_tpayarchive" prompt="_5_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="_5_Port" prompt="_5_Port?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_5_Schema_Archive" prompt="_5_Schema_Archive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_5_Schema_dbo" prompt="_5_Schema_dbo?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_5_UserName_readonly" prompt="_5_UserName_readonly?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;MSH&quot;"/>
+    <contextParameter comment="" name="_5_UserName_tpayarchive" prompt="_5_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_9IfnYDmyEemYSsKQr0ot7w" type="id_String" value="&quot;MSH&quot;"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;E:/Sources/TOS_DI-20180411_1414-V7.0.1/TOS_DI-20180411_1414-V7.0.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMSSqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="JTDS"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context._30_Host"/>
+    <elementParameter field="TEXT" name="PORT" value="context._30_Port"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context._30_Database"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context._30_Schema_Archive"/>
+    <elementParameter field="TEXT" name="USER" value="context._30_UserName_tpayarchive"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufK9vRIpPt7ORQa9SiO+/8iBvemkLWlMn6jLNPrDPTSZg=="/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;JobsStats&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;JobsLogs&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;JobsMeter&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_79lNkNjcEeeA8uhG5jhjUQ" name="DataOperation"/>
+    <routinesParameter id="_7-Zs8NjcEeeA8uhG5jhjUQ" name="Mathematical"/>
+    <routinesParameter id="_7-4OENjcEeeA8uhG5jhjUQ" name="Numeric"/>
+    <routinesParameter id="_7_B_ENjcEeeA8uhG5jhjUQ" name="Relational"/>
+    <routinesParameter id="_7_LwENjcEeeA8uhG5jhjUQ" name="StringHandling"/>
+    <routinesParameter id="_7_ZLcNjcEeeA8uhG5jhjUQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_7_qRMNjcEeeA8uhG5jhjUQ" name="TalendDate"/>
+    <routinesParameter id="_7_6I0NjcEeeA8uhG5jhjUQ" name="TalendString"/>
+    <routinesParameter id="_ayJMAN0dEeiVILmrHFTw1g" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context._29_Host"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context._29_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context._29_Schema_Archive"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context._29_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context._29_UserName_readonly"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucnH9ZX4QVVxjyV52phRHAaXxZRn1JvWw0="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;subscriptioncontracts_ArchiveStaging&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select [Id]&#xD;&#xA;      ,[UserIdentity]&#xD;&#xA;      ,[Msisdn]&#xD;&#xA;      ,[MobileOperatorId]&#xD;&#xA;      ,[SubscriptionPlanInstanceId]&#xD;&#xA;      ,[InitialPaymentProductId]&#xD;&#xA;      ,[InitialPaymentDate]&#xD;&#xA;      ,[ProductCatalogName]&#xD;&#xA;      ,[RecurringPaymentProductId]&#xD;&#xA;      ,[StartDate]&#xD;&#xA;      ,[EndDate]&#xD;&#xA;      ,[AutoRenew]&#xD;&#xA;      ,[NextPaymentDate]&#xD;&#xA;      ,[LastPaymentDate]&#xD;&#xA;      ,[CancellationDate]&#xD;&#xA;      ,[CancellationProductCatalogName]&#xD;&#xA;      ,[CancellationProductId]&#xD;&#xA;      ,[Status]&#xD;&#xA;      ,[DateCreated]&#xD;&#xA;      ,[DateModified]&#xD;&#xA;      ,[CreatedBy]&#xD;&#xA;      ,[ModifiedBy]&#xD;&#xA;      ,[Language]&#xD;&#xA;      ,[SubscriptionPlanId]&#xD;&#xA;      ,[ProductOfferPricing_SID]&#xD;&#xA;      ,[OperatorSubscriptionGateWay]&#xD;&#xA;      ,[OperatorSubscriptionId]&#xD;&#xA;      ,[NextRetrialPaymentDate]&#xD;&#xA;      ,[NextRetrialPaymentTransactionId]&#xD;&#xA;      ,[FirstSuccessPaymentTranId]&#xD;&#xA;      ,[LastBillNo] &#xD;&#xA;,[LastSuccessTransactionId]&#xD;&#xA;      ,[LastSuccessTransactionDate]&#xD;&#xA;      ,[LastReminderSMSDate]&#xD;&#xA;      ,[DisableReminders]&#xD;&#xA;from archive.subscriptioncontracts_ArchiveStaging with(nolock)&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UserIdentity"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Msisdn"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MobileOperatorId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SubscriptionPlanInstanceId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InitialPaymentProductId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InitialPaymentDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductCatalogName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RecurringPaymentProductId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StartDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EndDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AutoRenew"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NextPaymentDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastPaymentDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CancellationDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CancellationProductCatalogName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CancellationProductId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateCreated"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateModified"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedBy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Language"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SubscriptionPlanId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductOfferPricing_SID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OperatorSubscriptionGateWay"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OperatorSubscriptionId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NextRetrialPaymentDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NextRetrialPaymentTransactionId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstSuccessPaymentTranId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastBillNo"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="src_Archive.SubContr_Arc"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_1">
+      <column comment="" defaultValue="" key="true" length="19" name="Id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="UserIdentity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Msisdn" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MobileOperatorId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubscriptionPlanInstanceId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="InitialPaymentProductId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="InitialPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ProductCatalogName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RecurringPaymentProductId" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="StartDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="EndDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="AutoRenew" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="NextPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="LastPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="CancellationDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CancellationProductCatalogName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CancellationProductId" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Status" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateCreated" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateModified" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CreatedBy" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ModifiedBy" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Language" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubscriptionPlanId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ProductOfferPricing_SID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="OperatorSubscriptionGateWay" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="OperatorSubscriptionId" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="NextRetrialPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="NextRetrialPaymentTransactionId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="FirstSuccessPaymentTranId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="LastBillNo" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context._5_Host"/>
+    <elementParameter field="TEXT" name="PORT" value="context._5_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context._5_Schema_dbo"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context._5_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context._5_UserName_tpayarchive"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudqFoOxSq9BI08jEpLU1GPjGFLXWXp7h40="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SubscriptionContractsBase&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="Id" show="false"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UserIdentity"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Msisdn"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MobileOperatorId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SubscriptionPlanInstanceId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InitialPaymentProductId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InitialPaymentDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductCatalogName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RecurringPaymentProductId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StartDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EndDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AutoRenew"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NextPaymentDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastPaymentDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CancellationDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CancellationProductCatalogName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CancellationProductId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateCreated"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateModified"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedBy"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Language"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SubscriptionPlanId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductOfferPricing_SID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OperatorSubscriptionGateWay"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OperatorSubscriptionId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NextRetrialPaymentDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NextRetrialPaymentTransactionId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstSuccessPaymentTranId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastBillNo"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="dest_SubContrBase"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlOutput_1">
+      <column comment="" defaultValue="" key="true" length="19" name="Id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="UserIdentity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Msisdn" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MobileOperatorId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubscriptionPlanInstanceId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="InitialPaymentProductId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="InitialPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ProductCatalogName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RecurringPaymentProductId" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="StartDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="EndDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="AutoRenew" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="NextPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="LastPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="CancellationDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CancellationProductCatalogName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CancellationProductId" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Status" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateCreated" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateModified" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CreatedBy" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ModifiedBy" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Language" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubscriptionPlanId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ProductOfferPricing_SID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="OperatorSubscriptionGateWay" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="OperatorSubscriptionId" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="NextRetrialPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="NextRetrialPaymentTransactionId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="FirstSuccessPaymentTranId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="LastBillNo" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="true" length="19" name="Id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="UserIdentity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Msisdn" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MobileOperatorId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubscriptionPlanInstanceId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="InitialPaymentProductId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="InitialPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ProductCatalogName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RecurringPaymentProductId" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="StartDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="EndDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="AutoRenew" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="NextPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="LastPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="CancellationDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CancellationProductCatalogName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CancellationProductId" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Status" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateCreated" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateModified" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CreatedBy" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ModifiedBy" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Language" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubscriptionPlanId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ProductOfferPricing_SID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="OperatorSubscriptionGateWay" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="OperatorSubscriptionId" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="NextRetrialPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="NextRetrialPaymentTransactionId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="FirstSuccessPaymentTranId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="LastBillNo" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.RejectionPath +&quot;Rej_SubContrBase.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" defaultValue="" key="true" length="19" name="Id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="UserIdentity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Msisdn" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MobileOperatorId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubscriptionPlanInstanceId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="InitialPaymentProductId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="InitialPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ProductCatalogName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RecurringPaymentProductId" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="StartDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="EndDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="AutoRenew" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="NextPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="LastPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="CancellationDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CancellationProductCatalogName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CancellationProductId" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Status" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateCreated" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateModified" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CreatedBy" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ModifiedBy" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Language" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubscriptionPlanId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ProductOfferPricing_SID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="OperatorSubscriptionGateWay" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="OperatorSubscriptionId" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="NextRetrialPaymentDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="NextRetrialPaymentTransactionId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="FirstSuccessPaymentTranId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="LastBillNo" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.To"/>
+    <elementParameter field="TEXT" name="FROM" value="context.From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="context.SenderName"/>
+    <elementParameter field="TEXT" name="CC" value="context.CC"/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Job J_Rep_SubContrBase&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Rows Selected: &quot; +((Integer)globalMap.get(&quot;tMSSqlInput_1_NB_LINE&quot;)) + &quot; , &quot; + &quot;Rows Inserted: &quot; + ((Integer)globalMap.get(&quot;tMSSqlOutput_1_NB_LINE_INSERTED&quot;)) + &quot;Rows Rejected: &quot; + ((Integer)globalMap.get(&quot;tMSSqlOutput_1_NB_LINE_REJECTED&quot;))&#xD;&#xA;+ &quot;Rows Updated: &quot; + ((Integer)globalMap.get(&quot;tMSSqlOutput_1_NB_LINE_UPDATED&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_Host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.UserName"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufqm00cCzjF7T9AKOTpPmD8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_1"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tMSSqlOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tSendMail_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="REJECT" label="row2" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" source="tMSSqlOutput_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

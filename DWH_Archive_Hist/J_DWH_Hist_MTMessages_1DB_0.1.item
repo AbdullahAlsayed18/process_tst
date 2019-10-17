@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Production" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="_7_Database" prompt="_7_Database?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V2_sept&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V1" prompt="_7_DB_2018_V1?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018_V1&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V2" prompt="_7_DB_2018_V2?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018_V2&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V3" prompt="_7_DB_2018_V3?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018_V3&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V4" prompt="_7_DB_2018_V4?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018_V4&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V5" prompt="_7_DB_2018_V5?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018_V5&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V6" prompt="_7_DB_2018_V6?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018V6&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V7" prompt="_7_DB_2018_V7?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018V7&quot;"/>
+    <contextParameter comment="" name="_7_DB_2019_V1" prompt="_7_DB_2019_V1?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V1&quot;"/>
+    <contextParameter comment="" name="_7_DB_ArchiveDist" prompt="_7_DB_ArchiveDist?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TpayLive_ArchiveDist&quot;"/>
+    <contextParameter comment="" name="_7_Host" prompt="_7_Host?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.7&quot;"/>
+    <contextParameter comment="" name="_7_Password_readolny" prompt="_7_Password_readolny?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_7_Password_tpayarchive" prompt="_7_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_7_Port" prompt="_7_Port?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_7_Schema_Archive" prompt="_7_Schema_Archive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_7_Schema_dbo" prompt="_7_Schema_dbo?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_7_UserName_readonly" prompt="_7_UserName_readonly?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_7_UserName_tpayarchive" prompt="_7_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="SF_CopyCMD_Path" prompt="SF_CopyCMD_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value="&quot;D:\\DWH_CSV\\SnowFlake_Copy_Cmd\\&quot;"/>
+    <contextParameter comment="" name="SF_Password" prompt="SF_Password?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_Password" value="IPpgPu55Usf0SwvtVlEVTA=="/>
+    <contextParameter comment="" name="SnowSql_Path" prompt="SnowSql_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value="&quot;C:\Users\muhammad.alshaarawy\.snowsql\1.1.76&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Archive">
+    <contextParameter comment="" name="_7_Database" prompt="_7_Database?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V2_april&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V1" prompt="_7_DB_2018_V1?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_DB_2018_V2" prompt="_7_DB_2018_V2?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_DB_2018_V3" prompt="_7_DB_2018_V3?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_DB_2018_V4" prompt="_7_DB_2018_V4?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_DB_2018_V5" prompt="_7_DB_2018_V5?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_DB_2018_V6" prompt="_7_DB_2018_V6?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_DB_2018_V7" prompt="_7_DB_2018_V7?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_DB_2019_V1" prompt="_7_DB_2019_V1?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_DB_ArchiveDist" prompt="_7_DB_ArchiveDist?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_Host" prompt="_7_Host?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_Password_readolny" prompt="_7_Password_readolny?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_Password_tpayarchive" prompt="_7_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_Port" prompt="_7_Port?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_Schema_Archive" prompt="_7_Schema_Archive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_Schema_dbo" prompt="_7_Schema_dbo?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_UserName_readonly" prompt="_7_UserName_readonly?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="_7_UserName_tpayarchive" prompt="_7_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value=""/>
+    <contextParameter comment="" name="SF_CopyCMD_Path" prompt="SF_CopyCMD_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value="&quot;D:\\DWH_CSV\\SnowFlake_Copy_Cmd\\&quot;"/>
+    <contextParameter comment="" name="SF_Password" prompt="SF_Password?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_Password" value="IPpgPu55Usf0SwvtVlEVTA=="/>
+    <contextParameter comment="" name="SnowSql_Path" prompt="SnowSql_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="Development">
+    <contextParameter comment="" name="_7_Database" prompt="_7_Database?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V1" prompt="_7_DB_2018_V1?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V2" prompt="_7_DB_2018_V2?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V3" prompt="_7_DB_2018_V3?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V4" prompt="_7_DB_2018_V4?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V5" prompt="_7_DB_2018_V5?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V6" prompt="_7_DB_2018_V6?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V7" prompt="_7_DB_2018_V7?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_7_DB_2019_V1" prompt="_7_DB_2019_V1?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_7_DB_ArchiveDist" prompt="_7_DB_ArchiveDist?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPay.DB&quot;"/>
+    <contextParameter comment="" name="_7_Host" prompt="_7_Host?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;127.0.0.1&quot;"/>
+    <contextParameter comment="" name="_7_Password_readolny" prompt="_7_Password_readolny?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="_7_Password_tpayarchive" prompt="_7_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;ABA^2016&quot;"/>
+    <contextParameter comment="" name="_7_Port" prompt="_7_Port?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_7_Schema_Archive" prompt="_7_Schema_Archive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_7_Schema_dbo" prompt="_7_Schema_dbo?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_7_UserName_readonly" prompt="_7_UserName_readonly?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;MSH&quot;"/>
+    <contextParameter comment="" name="_7_UserName_tpayarchive" prompt="_7_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;MSH&quot;"/>
+    <contextParameter comment="" name="SF_CopyCMD_Path" prompt="SF_CopyCMD_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value="&quot;D:\\DWH_CSV\\SnowFlake_Copy_Cmd\\&quot;"/>
+    <contextParameter comment="" name="SF_Password" prompt="SF_Password?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_Password" value="IPpgPu55Usf0SwvtVlEVTA=="/>
+    <contextParameter comment="" name="SnowSql_Path" prompt="SnowSql_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value="&quot;C:\Users\muhammad.alshaarawy\.snowsql\1.1.76&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" name="_7_Database" prompt="_7_Database?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V2_sept&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V1" prompt="_7_DB_2018_V1?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018_V1&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V2" prompt="_7_DB_2018_V2?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018_V2&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V3" prompt="_7_DB_2018_V3?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018_V3&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V4" prompt="_7_DB_2018_V4?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018_V4&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V5" prompt="_7_DB_2018_V5?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018_V5&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V6" prompt="_7_DB_2018_V6?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018V6&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V7" prompt="_7_DB_2018_V7?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2018V7&quot;"/>
+    <contextParameter comment="" name="_7_DB_2019_V1" prompt="_7_DB_2019_V1?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V1&quot;"/>
+    <contextParameter comment="" name="_7_DB_ArchiveDist" prompt="_7_DB_ArchiveDist?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TpayLive_ArchiveDist&quot;"/>
+    <contextParameter comment="" name="_7_Host" prompt="_7_Host?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;192.168.43.7&quot;"/>
+    <contextParameter comment="" name="_7_Password_readolny" prompt="_7_Password_readolny?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;z>G3^crgAW&quot;"/>
+    <contextParameter comment="" name="_7_Password_tpayarchive" prompt="_7_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;0jXEGmhKtlDi&quot;"/>
+    <contextParameter comment="" name="_7_Port" prompt="_7_Port?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_7_Schema_Archive" prompt="_7_Schema_Archive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_7_Schema_dbo" prompt="_7_Schema_dbo?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_7_UserName_readonly" prompt="_7_UserName_readonly?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;readonly&quot;"/>
+    <contextParameter comment="" name="_7_UserName_tpayarchive" prompt="_7_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;tpayarchive&quot;"/>
+    <contextParameter comment="" name="SF_CopyCMD_Path" prompt="SF_CopyCMD_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value="&quot;F:\\DWH_CSV\\SnowFlake_Copy_Cmd\\&quot;"/>
+    <contextParameter comment="" name="SF_Password" prompt="SF_Password?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_Password" value="IPpgPu55Usf0SwvtVlEVTA=="/>
+    <contextParameter comment="" name="SnowSql_Path" prompt="SnowSql_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value="&quot;C:\Users\Bigdata\&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="" name="_7_Database" prompt="_7_Database?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V2_april&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V1" prompt="_7_DB_2018_V1?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V1&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V2" prompt="_7_DB_2018_V2?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V1&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V3" prompt="_7_DB_2018_V3?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V1&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V4" prompt="_7_DB_2018_V4?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V1&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V5" prompt="_7_DB_2018_V5?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V1&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V6" prompt="_7_DB_2018_V6?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V1&quot;"/>
+    <contextParameter comment="" name="_7_DB_2018_V7" prompt="_7_DB_2018_V7?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V1&quot;"/>
+    <contextParameter comment="" name="_7_DB_2019_V1" prompt="_7_DB_2019_V1?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V1&quot;"/>
+    <contextParameter comment="" name="_7_DB_ArchiveDist" prompt="_7_DB_ArchiveDist?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;TPayProd2019V1&quot;"/>
+    <contextParameter comment="" name="_7_Host" prompt="_7_Host?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;102.128.176.36&quot;"/>
+    <contextParameter comment="" name="_7_Password_readolny" prompt="_7_Password_readolny?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;87yj$5^dfre&quot;"/>
+    <contextParameter comment="" name="_7_Password_tpayarchive" prompt="_7_Password_tpayarchive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;87yj$5^dfre&quot;"/>
+    <contextParameter comment="" name="_7_Port" prompt="_7_Port?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter comment="" name="_7_Schema_Archive" prompt="_7_Schema_Archive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;Archive&quot;"/>
+    <contextParameter comment="" name="_7_Schema_dbo" prompt="_7_Schema_dbo?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter comment="" name="_7_UserName_readonly" prompt="_7_UserName_readonly?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;Bigdata&quot;"/>
+    <contextParameter comment="" name="_7_UserName_tpayarchive" prompt="_7_UserName_tpayarchive?" promptNeeded="false" repositoryContextId="_V0M2sDm0EemYSsKQr0ot7w" type="id_String" value="&quot;Bigdata&quot;"/>
+    <contextParameter comment="" name="SF_CopyCMD_Path" prompt="SF_CopyCMD_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value="&quot;D:\\DWH_CSV\\SnowFlake_Copy_Cmd\\&quot;"/>
+    <contextParameter comment="" name="SF_Password" prompt="SF_Password?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_Password" value="IPpgPu55Usf0SwvtVlEVTA=="/>
+    <contextParameter comment="" name="SnowSql_Path" prompt="SnowSql_Path?" promptNeeded="false" repositoryContextId="_-NVf0E-8EemmlYRkcj-RZg" type="id_String" value="&quot;C:\Users\muhammad.alshaarawy\.snowsql\1.1.76&quot;"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/TOS_DI-Win32-20180411_1414-V7.0.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_Gg5IoBM8EemUXOMNiUGsbA" name="DataOperation"/>
+    <routinesParameter id="_GujxMBM8EemUXOMNiUGsbA" name="Mathematical"/>
+    <routinesParameter id="_GvBrQBM8EemUXOMNiUGsbA" name="Numeric"/>
+    <routinesParameter id="_GvSxABM8EemUXOMNiUGsbA" name="Relational"/>
+    <routinesParameter id="_GvjPsBM8EemUXOMNiUGsbA" name="StringHandling"/>
+    <routinesParameter id="_GvwrEBM8EemUXOMNiUGsbA" name="TalendDataGenerator"/>
+    <routinesParameter id="_Gv_7oBM8EemUXOMNiUGsbA" name="TalendDate"/>
+    <routinesParameter id="_GwnmsBM8EemUXOMNiUGsbA" name="TalendStringUtil"/>
+    <routinesParameter id="_GwS2kBM8EemUXOMNiUGsbA" name="TalendString"/>
+  </parameters>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_8" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context._7_Host"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context._7_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context._7_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context._7_UserName_readonly"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucVaBDgwjhmxkXmONXt36Lmsv0XQRk9S2M="/>
+    <elementParameter field="DBTABLE" name="TABLE" value=""/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT   [Id]&#xD;&#xA;      ,[PartitionId]&#xD;&#xA;      ,[Message]&#xD;&#xA;      ,[SMSId]&#xD;&#xA;      ,[PaymentTransactionId]&#xD;&#xA;      ,[Sent]&#xD;&#xA;      ,[DateCreated]&#xD;&#xA;      ,[DateModified]&#xD;&#xA;      ,[CreatedBy]&#xD;&#xA;      ,[ModifiedBy]&#xD;&#xA;      ,[SubscriptionContractId]&#xD;&#xA;      ,[CustomerVerificationId]&#xD;&#xA;      ,[CDRId]&#xD;&#xA;&#x9;  , SUBSTRING('&quot;+context._7_Database+&quot;',9,15) As  SourceDB&#xD;&#xA;  FROM [dbo].[MTMessages]&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PartitionId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Message"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SMSId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PaymentTransactionId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sent"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateCreated"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateModified"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedBy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SubscriptionContractId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerVerificationId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CDRId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SourceDB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Archive_Server"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_8">
+      <column comment="" defaultValue="" key="false" length="19" name="Id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="PartitionId" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="Message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SMSId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="PaymentTransactionId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Sent" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateCreated" nullable="false" pattern="" precision="3" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateModified" nullable="false" pattern="" precision="3" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CreatedBy" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ModifiedBy" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubscriptionContractId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CustomerVerificationId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CDRId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="SourceDB" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;F:/DWH_CSV/MTMessages/MM_.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;^&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="true"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="300000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" defaultValue="" key="false" length="19" name="Id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="PartitionId" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="Message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SMSId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="PaymentTransactionId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Sent" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateCreated" nullable="false" pattern="" precision="3" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateModified" nullable="false" pattern="" precision="3" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CreatedBy" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ModifiedBy" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubscriptionContractId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CustomerVerificationId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CDRId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="SourceDB" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;F:/DWH_CSV/MTMessages&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES"/>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;" show="false"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileArchive" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileArchive_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="SOURCE" value="&quot;D:/DWH_CSV/PaymentTransactionsLogEntries/&quot;" show="false"/>
+    <elementParameter field="FILE" name="SOURCE_FILE" value="&quot;F:/DWH_CSV/MTMessages/&quot;+ ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
+    <elementParameter field="CHECK" name="SUB_DIRECTROY" value="true" show="false"/>
+    <elementParameter field="FILE" name="TARGET" value="&quot;F:/DWH_CSV/MTMessages/Archive/&quot;+((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))+&quot;.gz&quot;"/>
+    <elementParameter field="CHECK" name="MKDIR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="ARCHIVE_FORMAT" value="gzip"/>
+    <elementParameter field="CLOSED_LIST" name="LEVEL" value="9"/>
+    <elementParameter field="CHECK" name="ALL_FILES" value="true" show="false"/>
+    <elementParameter field="TABLE" name="MASK" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="OVERWRITE" value="true"/>
+    <elementParameter field="CHECK" name="ENCRYPT_FILES" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ENCRYPT_METHOD" value="ENC_METHOD_STANDARD" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AES_KEY_STRENGTH" value="AES_STRENGTH_256" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ZIP64_MODE" value="ASNEEDED" show="false"/>
+    <elementParameter field="CHECK" name="USE_SYNC_FLUSH" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileArchive_1">
+      <column comment="" defaultValue="" key="false" length="19" name="Id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="PartitionId" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="PaymentTransactionId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="Details" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Action" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateCreated" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateModified" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CreatedBy" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ModifiedBy" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SMSId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="SourceDB" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="-2" offsetLabelY="-2" posX="576" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_1" show="false"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="true"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.SnowSql_Path"/>
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c snowsql -a tpay.west-europe.azure -u AMAGDY  -d DB_ODS -s STG -q \&quot;put file://F:/DWH_CSV/MTMessages/Archive/MM_*.csv.gz @db_ODS.STG.%MTMessages AUTO_COMPRESS =False SOURCE_COMPRESSION =GZIP\&quot; &amp; rmdir F:\\DWH_CSV\\MTMessages /s /q&quot;"/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false">
+      <elementValue elementRef="VALUE" value="&quot;C:/Users/muhammad.alshaarawy/.snowsql/snowsqlAccess.bat&quot;"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TABLE" name="PARAMS">
+      <elementValue elementRef="NAME" value="&quot;SNOWSQL_PWD&quot;"/>
+      <elementValue elementRef="VALUE" value="context.SF_Password"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Put"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSystem_1">
+      <column comment="" defaultValue="" key="false" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Count" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MobileOperatorid" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MobileOperatorName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Hour" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="SourceDB" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_3" show="false"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="true"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.SnowSql_Path"/>
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c snowsql -a tpay.west-europe.azure -u AMAGDY  -d DB_ODS -s STG -q \&quot;alter warehouse suspend;\&quot;&quot;"/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false">
+      <elementValue elementRef="VALUE" value="&quot;C:/Users/muhammad.alshaarawy/.snowsql/snowsqlAccess.bat&quot;"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TABLE" name="PARAMS">
+      <elementValue elementRef="NAME" value="&quot;SNOWSQL_PWD&quot;"/>
+      <elementValue elementRef="VALUE" value="context.SF_Password"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Suspend_DWH"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSystem_3">
+      <column comment="" defaultValue="" key="false" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Count" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MobileOperatorid" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MobileOperatorName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Hour" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="SourceDB" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_4" show="false"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="true"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.SnowSql_Path"/>
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c snowsql -a tpay.west-europe.azure -u AMAGDY  -d DB_ODS -s STG -q \&quot;alter warehouse resume;\&quot;&quot;"/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false">
+      <elementValue elementRef="VALUE" value="&quot;C:/Users/muhammad.alshaarawy/.snowsql/snowsqlAccess.bat&quot;"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TABLE" name="PARAMS">
+      <elementValue elementRef="NAME" value="&quot;SNOWSQL_PWD&quot;"/>
+      <elementValue elementRef="VALUE" value="context.SF_Password"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Resume_DWH"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSystem_4">
+      <column comment="" defaultValue="" key="false" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Count" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MobileOperatorid" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MobileOperatorName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Hour" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="SourceDB" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_5" show="false"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="true"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.SnowSql_Path"/>
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c snowsql -a tpay.west-europe.azure -u AMAGDY  -d DB_ODS -s STG -f &quot;+context.SF_CopyCMD_Path+&quot;CPY_MTMessages_1DB.sql &amp; snowsql -a tpay.west-europe.azure -u AMAGDY  -d DB_ODS -s STG -q \&quot;rm @%MTMessages \&quot;&quot;"/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false">
+      <elementValue elementRef="VALUE" value="&quot;C:/Users/muhammad.alshaarawy/.snowsql/snowsqlAccess.bat&quot;"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TABLE" name="PARAMS">
+      <elementValue elementRef="NAME" value="&quot;SNOWSQL_PWD&quot;"/>
+      <elementValue elementRef="VALUE" value="context.SF_Password"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Copy"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSystem_5">
+      <column comment="" defaultValue="" key="false" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Count" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MobileOperatorid" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MobileOperatorName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Hour" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="SourceDB" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_8" offsetLabelX="0" offsetLabelY="0" source="tDBInput_8" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tFileList_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileArchive_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tSystem_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSystem_1" offsetLabelX="0" offsetLabelY="0" source="tSystem_1" target="tSystem_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tSystem_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSystem_4" offsetLabelX="0" offsetLabelY="0" source="tSystem_4" target="tSystem_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_8" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
